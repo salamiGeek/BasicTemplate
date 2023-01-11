@@ -26,6 +26,7 @@
 #include <stdio.h>
 #include <stdint.h>
 #include <string.h>
+#include <string>
 
 /* USER CODE END Includes */
 
@@ -98,8 +99,9 @@ int main(void)
   while (1)
   {
     HAL_GPIO_TogglePin(LED1_GPIO_Port, LED1_Pin);
+    std::string str = "hello c++\r\n";
 
-    printf("helloStm32\r\n");
+    printf("%s", str.c_str());
     HAL_Delay(1000);
     /* USER CODE END WHILE */
 
