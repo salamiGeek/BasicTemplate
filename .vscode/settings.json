@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "main.h": "c",
+        "retarget.h": "c",
+        "usart.h": "c"
+    }
+}
