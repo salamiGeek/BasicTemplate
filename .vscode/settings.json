@@ -2,6 +2,21 @@
     "files.associations": {
         "main.h": "c",
         "retarget.h": "c",
-        "usart.h": "c"
-    }
+        "usart.h": "c",
+        "userapp.h": "c",
+        "mpu9250.h": "c",
+        "stm32f4xx_hal.h": "c"
+    },
+    "clangd.arguments": [
+        "--background-index",
+        "--function-arg-placeholders=false",
+        "--compile-commands-dir=${workspaceFolder}",
+        "-j=4",
+        "--query-driver=/home/yarnell/.platformio/packages/toolchain-gccarmnoneeabi/bin/arm-none-eabi-gcc",
+        "--clang-tidy",
+        "--clang-tidy-checks=cppcoreguidelines-*,performance-*,bugprone-*,portability-*,modernize-*,google-*",
+        "--completion-style=detailed"
+    ],
+    "clangd.path": "/home/yarnell/.config/Code/User/globalStorage/llvm-vs-code-extensions.vscode-clangd/install/15.0.6/clangd_15.0.6/bin/clangd",
+    "C_Cpp.default.compileCommands": "${workspaceFolder}/.pio/build/black_f407zg/compile_commands.json"
 }
